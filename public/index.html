@@ -13,7 +13,6 @@
   <h1>Disc Golf Scorecard</h1>
 
   <div id="score-buttons">
-    <!-- Buttons for scores from -3 to +3 -->
     <button onclick="updateScore(-3)">-3</button>
     <button onclick="updateScore(-2)">-2</button>
     <button onclick="updateScore(-1)">-1</button>
@@ -29,27 +28,7 @@
     <!-- Chart to display scores -->
   </div>
 
-  <script>
-    // JavaScript logic
-    let scores = [];
+  <script src="script.js"></script>
 
-    function updateScore(score) {
-      scores.push(score);
-    }
-
-    function finishRound() {
-      // Display the chart with scores
-      const chartContainer = document.getElementById("score-chart");
-      const newGameIndex = scores.length;
-
-      const newGame = document.createElement("div");
-      newGame.textContent = `Game ${newGameIndex + 1}: ${scores.join(', ')}`;
-
-      chartContainer.appendChild(newGame);
-
-      // Clear the scores for the next round
-      scores = [];
-    }
-  </script>
 </body>
 </html>
