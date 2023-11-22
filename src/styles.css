@@ -1,40 +1,68 @@
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  #score-buttons {
-    margin: 20px 0;
-  }
-  
-  button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  button:active {
-    background-color: #3e8e41;
-  }
-  
-  #score-chart {
-    margin-top: 20px;
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: #004d00; /* Dark green */
+}
+
+#score-buttons {
+  margin: 20px 0;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:nth-child(1) {
+  background-color: #005c00d7; /* Dark green */
+}
+
+button:nth-child(2) {
+  background-color: rgb(0, 122, 0); /* Lighter green */
+}
+
+button:nth-child(3) {
+  background-color: rgb(0, 139, 0); /* Even lighter green */
+}
+
+button:nth-child(4) {
+  background-color: #808080; /* Gray */
+}
+
+button:nth-child(5) {
+  background-color: #ff3333bd; /* Light shade of red */
+}
+
+button:nth-child(6) {
+  background-color: #ff1c1cc2; /* Darker shade of red */
+}
+
+button:nth-child(7) {
+  background-color: #ff0000b4; /* Darker shade of red than +2 */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+#score-chart {
+  margin-top: 20px;
+}
   
   /* Add more styles as needed */
   
